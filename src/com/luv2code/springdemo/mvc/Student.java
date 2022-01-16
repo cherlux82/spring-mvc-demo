@@ -8,15 +8,8 @@ public class Student {
 	private String country;
 	private Map<String, String> countryOptions;
 	private String firstName;
-	private String favoriteLanguaje;
-
-	public String getFavoriteLanguaje() {
-		return favoriteLanguaje;
-	}
-
-	public void setFavoriteLanguaje(String favoriteLanguaje) {
-		this.favoriteLanguaje = favoriteLanguaje;
-	}
+	private String favoriteLanguage;
+	private LinkedHashMap<String, String> favoriteLanguageOptions;
 
 	private String lastName;
 
@@ -28,10 +21,23 @@ public class Student {
 		countryOptions.put("es", "España");
 		countryOptions.put("pe", "Peru");
 
+		favoriteLanguageOptions = new LinkedHashMap<>();
+		// parameter order: value, display label
+		//
+		favoriteLanguageOptions.put("PASCAL", "PASCAL");
+		favoriteLanguageOptions.put("Java", "Java");
+		favoriteLanguageOptions.put("C#", "C#");
+		favoriteLanguageOptions.put("PHP", "PHP");
+		favoriteLanguageOptions.put("Ruby", "Ruby");
+
 	}
 
 	public String getCountry() {
 		return country;
+	}
+
+	public LinkedHashMap<String, String> getFavoriteLanguageOptions() {
+		return favoriteLanguageOptions;
 	}
 
 	public Map<String, String> getCountryOptions() {
@@ -65,7 +71,16 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [country=" + country + ", countryOptions=" + countryOptions + ", firstName=" + firstName
-				+ ", favoriteLanguaje=" + favoriteLanguaje + ", lastName=" + lastName + "]";
+				+ ", favoriteLanguage=" + favoriteLanguage + ", favoriteLanguageOptions=" + favoriteLanguageOptions
+				+ ", lastName=" + lastName + "]";
+	}
+
+	public String getFavoriteLanguage() {
+		return favoriteLanguage;
+	}
+
+	public void setFavoriteLanguage(String favoriteLanguage) {
+		this.favoriteLanguage = favoriteLanguage;
 	}
 
 }
