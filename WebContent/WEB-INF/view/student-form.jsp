@@ -21,6 +21,14 @@
 		</form:select>
 		<br>
 		<br>
+		Favorite Languaje: 
+		Java <form:radiobutton path="favoriteLanguaje" value="Java" />
+		C# <form:radiobutton path="favoriteLanguaje" value="C#" />
+		PHP <form:radiobutton path="favoriteLanguaje" value="PHP" />
+		Ruby <form:radiobutton path="favoriteLanguaje" value="Ruby" />
+		<br>
+		<br>
+
 		<input type="submit" value="Submit">
 	</form:form>
 </body>

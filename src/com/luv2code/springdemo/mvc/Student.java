@@ -8,6 +8,15 @@ public class Student {
 	private String country;
 	private Map<String, String> countryOptions;
 	private String firstName;
+	private String favoriteLanguaje;
+
+	public String getFavoriteLanguaje() {
+		return favoriteLanguaje;
+	}
+
+	public void setFavoriteLanguaje(String favoriteLanguaje) {
+		this.favoriteLanguaje = favoriteLanguaje;
+	}
 
 	private String lastName;
 
@@ -55,7 +64,8 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [firstName=" + firstName + ", lastName=" + lastName + ", country=" + country + "]";
+		return "Student [country=" + country + ", countryOptions=" + countryOptions + ", firstName=" + firstName
+				+ ", favoriteLanguaje=" + favoriteLanguaje + ", lastName=" + lastName + "]";
 	}
 
 }
