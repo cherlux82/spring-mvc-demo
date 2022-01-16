@@ -26,6 +26,15 @@
 			items="${student.favoriteLanguageOptions}" />
 		<br>
 		<br>
+		Operating Systems:
+		 
+		Linux<form:checkbox path="operatingSystems" value="Linux" />
+		Windows<form:checkbox path="operatingSystems" value="Windows" />
+		Mac OS<form:checkbox path="operatingSystems" value="MAC" />
+		Other<form:checkbox path="operatingSystems" value="Other" />
+
+		<br>
+		<br>
 
 		<input type="submit" value="Submit">
 	</form:form>
