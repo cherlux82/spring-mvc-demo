@@ -7,6 +7,6 @@
 </head>
 <body>
 	<h1>Hola Mundo!</h1>
-	<a href="showForm">Hello World Form </a>
+	<a href="hello/showForm">Hello World Form </a>
 </body>
 </html>
